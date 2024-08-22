@@ -17,7 +17,7 @@ class PodPlayerConfig {
     this.isLooping = false,
     this.forcedVideoFocus = false,
     this.wakelockEnabled = true,
-     this.isLive=false,
+    this.isLive = true,
     this.videoQualityPriority = const [1080, 720, 360],
   });
 
@@ -32,7 +32,7 @@ class PodPlayerConfig {
     return PodPlayerConfig(
       autoPlay: autoPlay ?? this.autoPlay,
       isLooping: isLooping ?? this.isLooping,
-      isLive: isLive??this.isLive,
+      isLive: isLive ?? this.isLive,
       forcedVideoFocus: forcedVideoFocus ?? this.forcedVideoFocus,
       wakelockEnabled: wakelockEnabled ?? this.wakelockEnabled,
       videoQualityPriority: videoQualityPriority ?? this.videoQualityPriority,

@@ -112,7 +112,7 @@ class PlayVideoFrom {
   }
   factory PlayVideoFrom.youtube(
     String dataSource, {
-    bool live = false,
+    bool live = true,
     VideoFormat? formatHint,
     Future<ClosedCaptionFile>? closedCaptionFile,
     VideoPlayerOptions? videoPlayerOptions,

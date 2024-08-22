@@ -1,4 +1,3 @@
-
 part of 'package:splayer/src/splayer.dart';
 
 class _MobileBottomSheet extends StatelessWidget {
@@ -19,7 +18,7 @@ class _MobileBottomSheet extends StatelessWidget {
               title: podCtr.podPlayerLabels.quality,
               icon: Icons.video_settings_rounded,
               subText: '${podCtr.vimeoPlayingVideoQuality}p',
-              onTap: () async{
+              onTap: () async {
                 Navigator.of(context).pop();
                 podCtr.videoCtr!.pause();
                 Timer(const Duration(milliseconds: 100), () {
@@ -33,8 +32,6 @@ class _MobileBottomSheet extends StatelessWidget {
                     ),
                   );
                 });
-
-
               },
             ),
           _bottomSheetTiles(
@@ -199,28 +196,14 @@ class _MobileOverlayBottomControlles extends StatelessWidget {
           Row(
             children: [
               const SizedBox(width: 12),
-              GetBuilder<PodGetXVideoController>(
-                tag: tag,
-                id: 'video-progress',
-                builder: (podCtr) {
-                  return Row(
-                    children: [
-                      Text(
-                        podCtr.calculateVideoDuration(podCtr.videoPosition),
-                        style: const TextStyle(color: itemColor),
-                      ),
-                      const Text(
-                        ' / ',
-                        style: durationTextStyle,
-                      ),
-                      Text(
-                        podCtr.calculateVideoDuration(podCtr.videoDuration),
-                        style: durationTextStyle,
-                      ),
-                    ],
-                  );
-                },
-              ),
+
+              // GetBuilder<PodGetXVideoController>(
+              //   tag: tag,
+              //   id: 'video-progress',
+              //   builder: (podCtr) {
+              //     return SizedBox();
+              //   },
+              // ),
               const Spacer(),
               MaterialIconButton(
                 toolTipMesg: podCtr.isFullScreen

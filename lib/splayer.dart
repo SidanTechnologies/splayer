@@ -3,7 +3,6 @@ library splayer;
 /// A Calculator.
 /// S Player library
 
-
 export 'package:video_player/video_player.dart';
 
 export 'src/controllers/pod_player_controller.dart';

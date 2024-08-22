@@ -406,7 +406,7 @@ class FlexiController extends ChangeNotifier {
     );
   }
 
-  static const defaultHideControlsTimer = Duration(seconds: 1);
+  static const defaultHideControlsTimer = Duration(seconds: 2);
 
   /// If false, the options button in MaterialUI and MaterialDesktopUI
   /// won't be shown.

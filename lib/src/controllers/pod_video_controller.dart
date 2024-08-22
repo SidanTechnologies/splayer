@@ -83,7 +83,7 @@ class _PodVideoController extends _PodUiController {
       isShowOverlay(true);
       // ignore: unawaited_futures
       _videoCtr?.play();
-      isShowOverlay(false, delay: const Duration(seconds: 1));
+      isShowOverlay(false, delay: const Duration(seconds: 2));
     } else {
       isShowOverlay(true);
       // ignore: unawaited_futures
@@ -183,7 +183,6 @@ class _PodVideoController extends _PodUiController {
       });
     }
   }
- 
 
   Future<void> disableFullScreen(
     BuildContext context,

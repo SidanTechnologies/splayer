@@ -68,7 +68,7 @@ class PodVideoPlayer extends StatefulWidget {
     this.videoThumbnail,
     this.onToggleFullScreen,
     this.onLoading,
-    required this.isLive,
+    this.isLive = true,
   }) {
     addToUiController();
   }
@@ -94,7 +94,8 @@ class PodVideoPlayer extends StatefulWidget {
   State<PodVideoPlayer> createState() => _PodVideoPlayerState();
 }
 
-class _PodVideoPlayerState extends State<PodVideoPlayer> with TickerProviderStateMixin {
+class _PodVideoPlayerState extends State<PodVideoPlayer>
+    with TickerProviderStateMixin {
   late PodGetXVideoController _podCtr;
 
   // late String tag;
